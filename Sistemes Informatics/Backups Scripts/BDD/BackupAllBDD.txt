@@ -1,0 +1,1 @@
+mysqldump -u root  projectedaw > "C:\Users\Dylan Garrido\Desktop\ProjecteFinal\Sistemes Informatics\Backups Scripts\BDD\backupAll.sql"

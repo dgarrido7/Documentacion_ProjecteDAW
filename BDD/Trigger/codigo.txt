@@ -1,0 +1,20 @@
+DELIMITER //
+
+CREATE TRIGGER gasolineras_after_delete
+AFTER DELETE ON gasolineras FOR EACH ROW
+BEGIN
+	DECLARE vuser varchar(50);
+   -- Guardamos el nombre del usuario que ha realizado el delete en una variable
+   SELECT USER() INTO vuser;
+   -- Guardamos los datos en una tabla
+   INSERT INTO auditoria_gasolineras
+   ( id_gasolinera,
+     fecha_eliminacion,
+     usuario)
+   VALUES
+   ( OLD.id,
+     SYSDATE(),
+     vuser );
+END; //
+
+DELIMITER ;

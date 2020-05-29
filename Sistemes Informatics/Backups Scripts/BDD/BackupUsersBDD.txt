@@ -1,0 +1,1 @@
+mysqldump -u root  projectedaw users > "C:\Users\Dylan Garrido\Desktop\ProjecteFinal\Sistemes Informatics\Backups Scripts\BDD\backupUsers.sql"

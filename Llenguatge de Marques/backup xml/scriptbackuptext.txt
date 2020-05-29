@@ -1,0 +1,1 @@
+mysqldump --xml -u root  projectedaw users > "C:\Users\Dylan Garrido\Desktop\ProjecteFinal\Llenguatge de Marques\backup xml\backupxml.xml"

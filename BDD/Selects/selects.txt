@@ -1,0 +1,3 @@
+select g.rotulo,g.PrecioGasolina95,c.Nombre,p.nombre,m.nombre  from comunidades c LEFT JOIN provincias p on c.Id=p.id_comarca LEFT JOIN municipios m on p.id=m.id_provincia LEFT JOIN gasolineras g ON c.Id=g.IDCCAA and p.id=g.IDProvincia and m.id=g.IDMunicipio WHERE c.Nombre='Cataluña' and p.nombre='GIRONA' AND m.nombre='Figueres' AND g.PrecioGasolina95<'1,1' ORDER by g.PrecioGasolina95 asc
+
+select c.Nombre as 'Comunidad' ,count(*) 'Total' from comunidades c LEFT JOIN gasolineras g ON c.Id=g.IDCCAA WHERE g.PrecioGasolina95<'1' GROUP BY Comunidad HAVING Total>25

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="projectedaw">
+	<table_structure name="users">
+		<field Field="id" Type="bigint(20) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="email" Type="varchar(255)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="email_verified_at" Type="timestamp" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="password" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="remember_token" Type="varchar(100)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="created_at" Type="timestamp" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="updated_at" Type="timestamp" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<key Table="users" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="users" Non_unique="0" Key_name="users_email_unique" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="users" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="4" Avg_row_length="4096" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="5" Create_time="2020-05-20 20:29:03" Update_time="2020-05-24 20:35:25" Collation="utf8mb4_unicode_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="users">
+	<row>
+		<field name="id">1</field>
+		<field name="name">Dylan Garrido</field>
+		<field name="email">dylanhurtos@gmail.com</field>
+		<field name="email_verified_at" xsi:nil="true" />
+		<field name="password">$2y$10$heORNfYXB9TKijunzF2PcurZ7FbZRQfxWRImub8jQ3EtOF0AjQObq</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="created_at">2020-05-24 18:23:44</field>
+		<field name="updated_at">2020-05-24 18:23:44</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">manolo</field>
+		<field name="email">manolo@gmail.com</field>
+		<field name="email_verified_at" xsi:nil="true" />
+		<field name="password">$2y$10$a8lXsiuEiJpMC8WNx7x8IuPpzFkJU1DskO8HdyY8iuabxumbls8ci</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="created_at">2020-05-24 18:27:32</field>
+		<field name="updated_at">2020-05-24 18:27:32</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="name">Mike</field>
+		<field name="email">mike@gmail.com</field>
+		<field name="email_verified_at" xsi:nil="true" />
+		<field name="password">$2y$10$4gu0ciXeVjvHH6STVjRnEuoBOFep2HVvL8qgDB0vaGUOhzVbv31Eq</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="created_at">2020-05-24 18:32:10</field>
+		<field name="updated_at">2020-05-24 18:32:10</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="name">adawq</field>
+		<field name="email">askskna@gaiiaak.com</field>
+		<field name="email_verified_at" xsi:nil="true" />
+		<field name="password">$2y$10$f2i7D7rENc7f1F4/kabqeuzFlxEGsqA2AErX476BdjXfn4p2ILVAC</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="created_at">2020-05-24 18:35:25</field>
+		<field name="updated_at">2020-05-24 18:35:25</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
